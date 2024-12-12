@@ -113,6 +113,7 @@ void loop() {
 
   if (Serial.available()){
 
+    // changing the name on the LCD
     name = Serial.readStringUntil('\n');
     name.trim();
     // only update LCD if the name has changed
